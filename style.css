@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
+.material-symbols-outlined {
+  
+  float: right;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 20;
+
+  cursor:pointer;
+  z-index: 2;
+}
 :root{
   --primary-color: #bcb0ce;
   --border-radius: 5px;
@@ -37,4 +49,66 @@ h1{
 h1:hover{
   background: rgba(0,0,0,0.8);
   
+}
+
+/* Bookmarks */
+
+.container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item{
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 10px;
+
+}
+
+
+.item:hover{
+  background: rgba(0,0,0,0.6);
+}
+
+a{
+  font: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a:link,
+a:visited{
+  color:white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active{
+  text-decoration: underline;
+}
+
+
+.name{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+
+.name img{
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .container{
+    flex-direction: column;
+  }
 }
